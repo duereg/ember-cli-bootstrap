@@ -14,7 +14,7 @@ module.exports = {
     var options         = app.options['ember-cli-bootstrap'] || {};
     var modulePath      = path.relative(app.project.root, __dirname);
     var bootstrapPath   = 'vendor/bootstrap/dist/';
-    var emberBsPath     = 'vendor/ember-addons.bs_for_ember/dist'
+    var emberBsPath     = 'vendor/duereg.bs_for_ember/dist'
     var javascriptsPath = path.join(emberBsPath, 'js');
     var jsFiles         = options.components ? options.components : fs.readdirSync(path.join(modulePath, javascriptsPath));
 
@@ -26,7 +26,7 @@ module.exports = {
       app.import(path.join(bootstrapPath, 'css/bootstrap.css'));
       app.import(path.join(bootstrapPath, 'css/bootstrap.css.map'), { destDir: 'assets' });
     }
-    
+
     app.import(path.join(emberBsPath, 'css/bs-growl-notifications.min.css'));
 
     // Import javascript files
