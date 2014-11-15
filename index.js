@@ -14,7 +14,7 @@ module.exports = {
     var options         = app.options['ember-cli-bootstrap'] || {};
     var modulePath      = path.relative(app.project.root, __dirname);
     var bootstrapPath   = 'vendor/bootstrap/dist/';
-    var emberBsPath     = 'vendor/duereg.bs_for_ember/dist'
+    var emberBsPath     = 'vendor/duereg.bs-for-ember/dist'
     var javascriptsPath = path.join(emberBsPath, 'js');
     var jsFiles         = options.components ? options.components : fs.readdirSync(path.join(modulePath, javascriptsPath));
 
